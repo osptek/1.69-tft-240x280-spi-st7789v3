@@ -1,41 +1,118 @@
-# 1.69" 240×280 TFT SPI module (ST7789V3) — documentation & samples
+<p align="left"><img alt="OSPTEK" src="./images/logo.png" width="200" /></p>
 
-**简体中文：** [`README.md`](README.md)
+<h1 align="center">OSPTEK 1.69″ TFT 240×280 (ST7789V3 · SPI)</h1>
+
+<p align="center"><b>TFT panel · SPI · ST7789V3</b></p>
+
+<p align="center"><a href="./README.md">简体中文</a> | English</p>
+
+<p align="center">
+  <img alt="Size: 1.69 inch" src="https://img.shields.io/badge/Size-1.69%22-3498DB?style=flat-square" />
+  <img alt="Resolution: 240x280" src="https://img.shields.io/badge/Resolution-240%C3%97280-8E44AD?style=flat-square" />
+  <img alt="Interface: SPI" src="https://img.shields.io/badge/Interface-SPI-27AE60?style=flat-square" />
+  <img alt="Driver: ST7789V3" src="https://img.shields.io/badge/Driver-ST7789V3-E7352C?style=flat-square" />
+</p>
+
+<p align="center"><img alt="OSPTEK 1.69 inch 240×280 TFT panel (ST7789V3) product image" src="./images/product.png" width="640" /></p>
+
+## Contents
+
+- [Branches](#branches)
+- [Overview](#overview)
+- [Specifications](#specifications)
+- [Sample projects](#sample-projects)
+- [Repository layout](#repository-layout)
+- [Resources](#resources)
+- [Buy](#buy)
+- [Support](#support)
 
 ---
 
-> This repository provides an **ESP-IDF sample project**. Datasheets and specifications will be added to `docs/` when available.
+## Branches
 
-## Product overview
+This repository is split by part number (**default branch**: [`YDP169H001-V3`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169H001-V3)):
 
-| Item | Description |
-|:--|:--|
-| Module | 1.69-inch **TFT** (IPS), **240×280** resolution |
-| Interface | **SPI** |
-| Driver IC | **ST7789V3** |
-| Spec ID | **`1.69-tft-240x280-spi-st7789v3`** is the common product designation in documentation |
-| Related variant | **ST7789** (with touch and split test projects) is in **`1.69-tft-240x280-spi-st7789`** — different driver IC |
+| Part number | Branch | Notes |
+| ---- | ---- | ---- |
+| YDP169H001-V3 | [`YDP169H001-V3`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169H001-V3) | **This branch** · panel (repo default) |
+| YDP169HB001-P8 | [`YDP169HB001-P8`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169HB001-P8) | Companion module |
 
----
+## Overview
+
+OSPTEK **1.69″ 240×280 TFT** is a **SPI** color panel driven by **ST7789V3**. This branch covers the **panel** specification; the companion module is on [`YDP169HB001-P8`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169HB001-P8).
+
+Spec ID (repository name): `1.69-tft-240x280-spi-st7789v3`
+
+Current panel version: **YDP169H001-V3**. Panel details follow [`docs/YDP169H001-V3.pdf`](./docs/YDP169H001-V3.pdf). Companion module: branch [`YDP169HB001-P8`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169HB001-P8).
+
+## Specifications
+
+| Item | Spec |
+| ---- | ---- |
+| Size | 1.69 inch |
+| Type | TFT / IPS (color) |
+| Resolution | 240×280 |
+| Interface | SPI (4-wire) |
+| Driver IC | ST7789V3 |
+
+> Full outline, FPC definition, power, and timing follow the product datasheet / driver IC datasheet.
+
+## Sample projects
+
+| Description | Path |
+| ---- | ---- |
+| ESP32-S3 · ST7789V3 SPI + LVGL9 | [`examples/esp32s3-1.69-tft-240x280-spi-st7789v3-bringup/`](./examples/esp32s3-1.69-tft-240x280-spi-st7789v3-bringup/) |
 
 ## Repository layout
 
-### Top-level
+```text
+1.69-tft-240x280-spi-st7789v3/
+├── README.md
+├── README_EN.md
+├── MODULE_VERSION.md
+├── LICENSE
+├── images/          # README assets
+├── docs/            # datasheets, init
+└── examples/        # sample projects
+```
 
-| Path | Contents |
-|:--|:--|
-| `assets/` | Demo screenshots for sample projects (when available) |
-| `docs/` | Datasheets and specifications (**to be added**) |
-| `examples/` | **Sample projects** |
+## Resources
 
-### `examples/` layout
+### Product files
 
-| Location | Description |
-|:--|:--|
-| `examples/` root | ESP32-S3 + IDF5: ST7789V3 SPI + LVGL9 (spectrum UI demo) |
+| Resource | Link |
+| ---- | ---- |
+| Panel datasheet (YDP169H001-V3) | [`docs/YDP169H001-V3.pdf`](./docs/YDP169H001-V3.pdf) |
+| Driver IC datasheet (ST7789V3) | [`docs/ST_7789_V3_SPEC_Preliminary_V0_0_200102_8f4b7f4d5d.pdf`](./docs/ST_7789_V3_SPEC_Preliminary_V0_0_200102_8f4b7f4d5d.pdf) |
+| Init sequence (INI) | [`docs/HSD1.69IPS-ST7789V2-2.5Gamma-20210824.INI`](./docs/HSD1.69IPS-ST7789V2-2.5Gamma-20210824.INI) |
 
-### Sample project paths
+### Samples
 
-| Description | Path |
-|:--|:--|
-| ST7789V3 SPI bringup (LVGL9) | `examples/esp32s3-1.69-tft-240x280-spi-st7789v3-bringup/` |
+- [ESP32-S3 ST7789V3 SPI + LVGL9](./examples/esp32s3-1.69-tft-240x280-spi-st7789v3-bringup/)
+
+## Buy
+
+<p align="center">
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="AliExpress store" src="https://img.shields.io/badge/AliExpress-Official_Store-FF6A00?style=for-the-badge" /></a>
+  &nbsp;&nbsp;
+  <a href="https://shop110742373.taobao.com/"><img alt="Taobao store" src="https://img.shields.io/badge/Taobao-Official_Store-FF6A00?style=for-the-badge" /></a>
+</p>
+
+**Overseas (AliExpress)**
+
+- Store: [OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
+
+**China (Taobao)**
+
+- Store: [鱼鹰光电工厂店](https://shop110742373.taobao.com/)
+
+## Support
+
+- Technical support / product inquiry: <luyu@osptek.com>
+- QQ group (China): **985881096**
+- Website: <https://osptek.com/>
+- Feel free to open an Issue in this repository if you have any questions
+
+---
+
+<p align="center"><sub>© 2026 OSPTEK · Materials in this repository are licensed under CC BY 4.0</sub></p>
