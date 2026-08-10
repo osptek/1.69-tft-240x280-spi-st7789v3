@@ -48,15 +48,11 @@
 
 <p align="center"><img alt="YDP169H001-V3" src="./images/YDP169H001-V3.png" width="320" /></p>
 
-**说明：** 模组。
-
 ---
 
 ## YDP169HB001-P8
 
 <p align="center"><img alt="YDP169HB001-P8" src="./images/YDP169HB001-P8.png" width="320" /></p>
-
-**说明：** 模组。
 
 ---
 

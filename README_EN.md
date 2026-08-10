@@ -48,15 +48,11 @@ Repo id: `1.69-tft-240x280-spi-st7789v3`
 
 <p align="center"><img alt="YDP169H001-V3" src="./images/YDP169H001-V3.png" width="320" /></p>
 
-**Notes:** Module.
-
 ---
 
 ## YDP169HB001-P8
 
 <p align="center"><img alt="YDP169HB001-P8" src="./images/YDP169HB001-P8.png" width="320" /></p>
-
-**Notes:** Module.
 
 ---
 
