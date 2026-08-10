@@ -69,7 +69,6 @@ Current panel version: **YDP169H001-V3**. Panel details follow [`docs/YDP169H001
 1.69-tft-240x280-spi-st7789v3/
 ├── README.md
 ├── README_EN.md
-├── MODULE_VERSION.md
 ├── LICENSE
 ├── images/          # README assets
 ├── docs/            # datasheets, init

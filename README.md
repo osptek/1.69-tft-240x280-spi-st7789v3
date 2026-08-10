@@ -69,7 +69,6 @@ OSPTEK **1.69 寸 240×280 TFT** 屏幕为 **SPI** 彩色面板，显示驱动�
 1.69-tft-240x280-spi-st7789v3/
 ├── README.md
 ├── README_EN.md
-├── MODULE_VERSION.md
 ├── LICENSE
 ├── images/          # README 用图
 ├── docs/            # 规格书、驱动手册、初始化等
