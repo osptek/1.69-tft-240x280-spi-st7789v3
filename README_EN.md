@@ -2,9 +2,9 @@
 
 <h1 align="center">OSPTEK 1.69″ TFT 240×280 (ST7789V3 · SPI)</h1>
 
-<p align="center"><b>TFT panel · SPI · ST7789V3</b></p>
+<p align="center"><b>TFT module · SPI · ST7789V3 · Multi-Version Index</b></p>
 
-<p align="center"><a href="./README.md">简体中文</a> | English</p>
+<p align="center">English | <a href="./README.md">简体中文</a></p>
 
 <p align="center">
   <img alt="Size: 1.69 inch" src="https://img.shields.io/badge/Size-1.69%22-3498DB?style=flat-square" />
@@ -13,91 +13,71 @@
   <img alt="Driver: ST7789V3" src="https://img.shields.io/badge/Driver-ST7789V3-E7352C?style=flat-square" />
 </p>
 
-<p align="center"><img alt="OSPTEK 1.69 inch 240×280 TFT panel (ST7789V3) product image" src="./images/product.png" width="640" /></p>
-
 ## Contents
 
-- [Branches](#branches)
-- [Overview](#overview)
-- [Specifications](#specifications)
-- [Sample projects](#sample-projects)
-- [Repository layout](#repository-layout)
-- [Resources](#resources)
-- [Buy](#buy)
+- [About](#about)
+- [Versions](#versions)
+- [YDP169H001-V3](#ydp169h001-v3)
+- [YDP169HB001-P8](#ydp169hb001-p8)
+- [How to Switch Branches](#how-to-switch-branches)
+- [Where to Buy](#where-to-buy)
 - [Support](#support)
 
 ---
 
-## Branches
+## About
 
-This repository is split by part number (**default branch**: [`YDP169H001-V3`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169H001-V3)):
+This repository holds materials for the **1.69″ 240×280 TFT (SPI · ST7789V3)** module family.
 
-| Part number | Branch | Notes |
-| ---- | ---- | ---- |
-| YDP169H001-V3 | [`YDP169H001-V3`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169H001-V3) | **This branch** · panel (repo default) |
-| YDP169HB001-P8 | [`YDP169HB001-P8`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169HB001-P8) | Companion module |
+**`main` is the navigation page** (repository default). Use the table below for a quick scan; click **Details** to jump to the section on this page. For a given version’s full content, switch to that **version branch** (see below).
 
-## Overview
+Repo id: `1.69-tft-240x280-spi-st7789v3`
 
-OSPTEK **1.69″ 240×280 TFT** is a **SPI** color panel driven by **ST7789V3**. This branch covers the **panel** specification; the companion module is on [`YDP169HB001-P8`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169HB001-P8).
+---
 
-Spec ID (repository name): `1.69-tft-240x280-spi-st7789v3`
+## Versions
 
-Current panel version: **YDP169H001-V3**. Panel details follow [`docs/YDP169H001-V3.pdf`](./docs/YDP169H001-V3.pdf). Companion module: branch [`YDP169HB001-P8`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169HB001-P8).
+| Version | Image | Notes |
+| ------- | ----- | ----- |
+| YDP169H001-V3 | <img alt="YDP169H001-V3" src="./images/YDP169H001-V3.png" width="120" /> | [Details](#ydp169h001-v3) |
+| YDP169HB001-P8 | <img alt="YDP169HB001-P8" src="./images/YDP169HB001-P8.png" width="120" /> | [Details](#ydp169hb001-p8) |
 
-## Specifications
+---
 
-| Item | Spec |
-| ---- | ---- |
-| Size | 1.69 inch |
-| Type | TFT / IPS (color) |
-| Resolution | 240×280 |
-| Interface | SPI (4-wire) |
-| Driver IC | ST7789V3 |
+## YDP169H001-V3
 
-> Full outline, FPC definition, power, and timing follow the product datasheet / driver IC datasheet.
+<p align="center"><img alt="YDP169H001-V3" src="./images/YDP169H001-V3.png" width="320" /></p>
 
-## Sample projects
+**Notes:** Module.
 
-| Description | Path |
-| ---- | ---- |
-| ESP32-S3 · ST7789V3 SPI + LVGL9 | [`examples/esp32s3-1.69-tft-240x280-spi-st7789v3-bringup/`](./examples/esp32s3-1.69-tft-240x280-spi-st7789v3-bringup/) |
+---
 
-## Repository layout
+## YDP169HB001-P8
 
-```text
-1.69-tft-240x280-spi-st7789v3/
-├── README.md
-├── README_EN.md
-├── LICENSE
-├── images/          # README assets
-├── docs/            # datasheets, init
-└── examples/        # sample projects
-```
+<p align="center"><img alt="YDP169HB001-P8" src="./images/YDP169HB001-P8.png" width="320" /></p>
 
-## Resources
+**Notes:** Module.
 
-### Product files
+---
 
-| Resource | Link |
-| ---- | ---- |
-| Panel datasheet (YDP169H001-V3) | [`docs/YDP169H001-V3.pdf`](./docs/YDP169H001-V3.pdf) |
-| Driver IC datasheet (ST7789V3) | [`docs/ST_7789_V3_SPEC_Preliminary_V0_0_200102_8f4b7f4d5d.pdf`](./docs/ST_7789_V3_SPEC_Preliminary_V0_0_200102_8f4b7f4d5d.pdf) |
-| Init sequence (INI) | [`docs/HSD1.69IPS-ST7789V2-2.5Gamma-20210824.INI`](./docs/HSD1.69IPS-ST7789V2-2.5Gamma-20210824.INI) |
+## How to Switch Branches
 
-### Samples
+Full product materials are on each **version branch**; `main` is navigation only.
 
-- [ESP32-S3 ST7789V3 SPI + LVGL9](./examples/esp32s3-1.69-tft-240x280-spi-st7789v3-bringup/)
+- **Web:** open the branch dropdown at the top left of the repository page and select the branch that matches your part number.
+- **CLI:** after cloning, run `git checkout <version-branch>`; if the repo is already local, `git fetch` first, then switch.
 
-## Buy
+---
+
+## Where to Buy
 
 <p align="center">
-  <a href="https://www.aliexpress.com/store/1105701619"><img alt="AliExpress store" src="https://img.shields.io/badge/AliExpress-Official_Store-FF6A00?style=for-the-badge" /></a>
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="AliExpress Official Store" src="https://img.shields.io/badge/AliExpress-Official_Store-E62E04?style=for-the-badge&logo=aliexpress&logoColor=white" /></a>
   &nbsp;&nbsp;
-  <a href="https://shop110742373.taobao.com/"><img alt="Taobao store" src="https://img.shields.io/badge/Taobao-Official_Store-FF6A00?style=for-the-badge" /></a>
+  <a href="https://shop110742373.taobao.com/"><img alt="Taobao Official Store" src="https://img.shields.io/badge/Taobao-Official_Store-FF6A00?style=for-the-badge" /></a>
 </p>
 
-**Overseas (AliExpress)**
+**International (AliExpress)**
 
 - Store: [OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
 
@@ -105,13 +85,15 @@ Current panel version: **YDP169H001-V3**. Panel details follow [`docs/YDP169H001
 
 - Store: [鱼鹰光电工厂店](https://shop110742373.taobao.com/)
 
+---
+
 ## Support
 
-- Technical support / product inquiry: <luyu@osptek.com>
-- QQ group (China): **985881096**
+- Technical Support / Sales: <luyu@osptek.com>
+- QQ Technical Group: **985881096**
 - Website: <https://osptek.com/>
 - Feel free to open an Issue in this repository if you have any questions
 
 ---
 
-<p align="center"><sub>© 2026 OSPTEK · Materials in this repository are licensed under CC BY 4.0</sub></p>
+<p align="center"><sub>© 2026 OSPTEK · Licensed under CC BY 4.0</sub></p>

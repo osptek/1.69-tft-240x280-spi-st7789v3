@@ -2,7 +2,7 @@
 
 <h1 align="center">OSPTEK 1.69″ TFT 240×280（ST7789V3 · SPI）</h1>
 
-<p align="center"><b>TFT 屏幕 · SPI · ST7789V3</b></p>
+<p align="center"><b>TFT 模组 · SPI · ST7789V3 · 多版本索引</b></p>
 
 <p align="center"><a href="./README_EN.md">English</a> | 简体中文</p>
 
@@ -13,88 +13,68 @@
   <img alt="Driver: ST7789V3" src="https://img.shields.io/badge/Driver-ST7789V3-E7352C?style=flat-square" />
 </p>
 
-<p align="center"><img alt="OSPTEK 1.69 寸 240×280 TFT 屏幕（ST7789V3）宣传图" src="./images/product.png" width="640" /></p>
-
 ## 目录
 
-- [分支介绍](#分支介绍)
-- [产品简介](#产品简介)
-- [规格参数](#规格参数)
-- [示例工程](#示例工程)
-- [仓库结构](#仓库结构)
-- [相关资料](#相关资料)
+- [说明](#说明)
+- [版本一览](#版本一览)
+- [YDP169H001-V3](#ydp169h001-v3)
+- [YDP169HB001-P8](#ydp169hb001-p8)
+- [如何切换分支](#如何切换分支)
 - [购买链接](#购买链接)
 - [技术支持](#技术支持)
 
 ---
 
-## 分支介绍
+## 说明
 
-本仓库按料号分为多个分支（**默认分支**为 [`YDP169H001-V3`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169H001-V3)）：
+本仓库收录 **1.69 寸 240×280 TFT（SPI · ST7789V3）** 显示模组资料。
 
-| 型号 | 分支 | 说明 |
-| ---- | ---- | ---- |
-| YDP169H001-V3 | [`YDP169H001-V3`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169H001-V3) | **本分支** · 屏幕（仓库默认分支） |
-| YDP169HB001-P8 | [`YDP169HB001-P8`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169HB001-P8) | 配套模组 |
-
-## 产品简介
-
-OSPTEK **1.69 寸 240×280 TFT** 屏幕为 **SPI** 彩色面板，显示驱动为 **ST7789V3**。本分支对应**屏幕规格**；配套模组见分支 [`YDP169HB001-P8`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169HB001-P8)。
+**`main` 为导航页**（仓库默认分支）。下表可快速浏览各版本；点击「说明」跳转到本页下方的详细介绍。需要某一版本的完整内容时，请切换到对应**版本分支**（方法见下文）。
 
 规格标识（仓库名）：`1.69-tft-240x280-spi-st7789v3`
 
-当前屏幕版本：**YDP169H001-V3**。屏幕细节以 [`docs/YDP169H001-V3.pdf`](./docs/YDP169H001-V3.pdf) 为准。配套模组见分支 [`YDP169HB001-P8`](https://github.com/osptek/1.69-tft-240x280-spi-st7789v3/tree/YDP169HB001-P8)。
+---
 
-## 规格参数
+## 版本一览
 
-| 项目 | 规格 |
-| ---- | ---- |
-| 尺寸 | 1.69 英寸 |
-| 类型 | TFT / IPS（彩色） |
-| 分辨率 | 240×280 |
-| 接口 | SPI（4-wire） |
-| 驱动 IC | ST7789V3 |
+| 版本 | 宣传图 | 说明 |
+| ---- | ------ | ---- |
+| YDP169H001-V3 | <img alt="YDP169H001-V3" src="./images/YDP169H001-V3.png" width="120" /> | [查看详情](#ydp169h001-v3) |
+| YDP169HB001-P8 | <img alt="YDP169HB001-P8" src="./images/YDP169HB001-P8.png" width="120" /> | [查看详情](#ydp169hb001-p8) |
 
-> 完整外形尺寸、FPC 定义、供电与时序以产品规格书 / 驱动手册为准。
+---
 
-## 示例工程
+## YDP169H001-V3
 
-| 说明 | 路径 |
-| ---- | ---- |
-| ESP32-S3 · ST7789V3 SPI + LVGL9 | [`examples/esp32s3-1.69-tft-240x280-spi-st7789v3-bringup/`](./examples/esp32s3-1.69-tft-240x280-spi-st7789v3-bringup/) |
+<p align="center"><img alt="YDP169H001-V3" src="./images/YDP169H001-V3.png" width="320" /></p>
 
-## 仓库结构
+**说明：** 模组。
 
-```text
-1.69-tft-240x280-spi-st7789v3/
-├── README.md
-├── README_EN.md
-├── LICENSE
-├── images/          # README 用图
-├── docs/            # 规格书、驱动手册、初始化等
-└── examples/        # 示例工程
-```
+---
 
-## 相关资料
+## YDP169HB001-P8
 
-### 本产品资料
+<p align="center"><img alt="YDP169HB001-P8" src="./images/YDP169HB001-P8.png" width="320" /></p>
 
-| 资料 | 链接 |
-| ---- | ---- |
-| 屏幕规格书（YDP169H001-V3） | [`docs/YDP169H001-V3.pdf`](./docs/YDP169H001-V3.pdf) |
-| 驱动 IC 数据手册（ST7789V3） | [`docs/ST_7789_V3_SPEC_Preliminary_V0_0_200102_8f4b7f4d5d.pdf`](./docs/ST_7789_V3_SPEC_Preliminary_V0_0_200102_8f4b7f4d5d.pdf) |
-| 初始化序列（INI） | [`docs/HSD1.69IPS-ST7789V2-2.5Gamma-20210824.INI`](./docs/HSD1.69IPS-ST7789V2-2.5Gamma-20210824.INI) |
+**说明：** 模组。
 
-### 示例工程
+---
 
-- [ESP32-S3 ST7789V3 SPI + LVGL9](./examples/esp32s3-1.69-tft-240x280-spi-st7789v3-bringup/)
+## 如何切换分支
+
+完整产品资料在各**版本分支**中；`main` 仅作导航。
+
+- **网页：** 在仓库页左上角打开分支下拉框，选择与料号对应的版本分支即可。
+- **命令行：** 克隆本仓库后执行 `git checkout <版本分支名>`；若本地已有仓库，先 `git fetch` 再切换。
+
+---
 
 ## 购买链接
 
 <p align="center">
   <a href="https://shop110742373.taobao.com/"><img alt="淘宝官方店铺" src="https://img.shields.io/badge/淘宝-官方店铺-FF6A00?style=for-the-badge" /></a>
   &nbsp;&nbsp;
-  <a href="https://www.aliexpress.com/store/1105701619"><img alt="速卖通官方店铺" src="https://img.shields.io/badge/速卖通-官方店铺-FF6A00?style=for-the-badge" /></a>
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="速卖通官方店铺" src="https://img.shields.io/badge/速卖通-官方店铺-E62E04?style=for-the-badge&logo=aliexpress&logoColor=white" /></a>
 </p>
 
 **国内（淘宝）**
@@ -104,6 +84,8 @@ OSPTEK **1.69 寸 240×280 TFT** 屏幕为 **SPI** 彩色面板，显示驱动�
 **海外（AliExpress）**
 
 - 店铺：[OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
+
+---
 
 ## 技术支持
 
